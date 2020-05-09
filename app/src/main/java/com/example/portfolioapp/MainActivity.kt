@@ -1,6 +1,7 @@
 package com.example.portfolioapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Message
 import android.view.Menu
@@ -8,12 +9,21 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+
 
         //since we've remove the default action bar, implement the toolbar to show on our action bar
         val toolbar =
@@ -23,6 +33,8 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
@@ -38,13 +50,6 @@ class MainActivity : AppCompatActivity() {
     //setting on click listener on toolbar menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-
-        if (item.itemId ==R.id.share_item){
-            val intent = Intent ()
-            intent.action = Intent.ACTION_SEND
-            val message : String = etUserMessage.text.toString()
-            intent.putExtra(Intent.EXTRA_TEXT, message)
-        }
 
         if (item.itemId == R.id.refresh) {
             Toast.makeText(this, "Refresh Activity", Toast.LENGTH_LONG).show()
