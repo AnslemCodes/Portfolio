@@ -11,18 +11,20 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="55dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="45dp"
         android:background="@color/gray1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="200dp"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
             android:background="@color/gray6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -30,33 +32,32 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="75dp"
-            android:layout_height="200dp"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
             android:background="@color/gray8">
 
 
         </LinearLayout>
 
-
         <LinearLayout
-            android:layout_width="75dp"
-            android:layout_height="100dp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
             android:background="@color/gray7">
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="85dp"
-            android:layout_height="200dp"
+            android:layout_width="145dp"
+            android:layout_height="100dp"
             android:background="@color/gray5">
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="100dp"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
             android:background="@color/gray7">
 
         </LinearLayout>
@@ -65,21 +66,22 @@
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circular_image"
+        android:id="@+id/circlePic"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="170dp"
-        android:src="@drawable/mypics"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/mypics">
 
-        ></de.hdodenhof.circleimageview.CircleImageView>
+    </de.hdodenhof.circleimageview.CircleImageView>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="450dp"
+        android:layout_marginBottom="150dp"
         android:gravity="center_horizontal"
         android:text="Anslem Edozie Emeshindu"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -93,7 +95,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="430dp"
+        android:layout_marginBottom="130dp"
         android:gravity="center_horizontal"
         android:text="Mobile Developer"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -102,11 +104,10 @@
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="349dp" />
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="380dp"
+        android:layout_marginBottom="80dp"
         android:gravity="center_horizontal"
         android:text="I'm warmed of mobile technologies."
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -114,12 +115,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="349dp" />
-
     <TextView
         android:id="@+id/tv_idea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="360dp"
+        android:layout_marginBottom="60dp"
         android:gravity="center_horizontal"
         android:text="Ideas maker, curious and nature lover."
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -128,12 +128,11 @@
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="349dp" />
 
-
     <TextView
         android:id="@+id/tv_loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="40dp"
         android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/colorAccent"
@@ -143,62 +142,58 @@
 
 
 
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="450dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_idea"
-
         >
+
 
         <ImageView
             android:id="@+id/playStore"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="50dp"
             android:src="@drawable/google_playstore" />
-<TextView
-    android:id="@+id/tv_playStore"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textColor="@color/white"
-    android:layout_marginLeft="10dp"
-    android:text="Play Store"
-    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-    android:layout_below="@id/playStore"
-    />
 
-
-
+        <TextView
+            android:id="@+id/tv_playStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:text="Play Store"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@id/playStore"
+            />
 
         <ImageView
             android:id="@+id/twitter"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="150dp"
             android:src="@drawable/twitter_1" />
         <TextView
             android:id="@+id/tv_twitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/white"
             android:text="Twitter"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_below="@id/twitter"
             />
 
-
         <ImageView
             android:id="@+id/dribble"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="250dp"
             android:src="@drawable/ic_dribble" />
 
@@ -207,19 +202,18 @@
             android:id="@+id/tv_dribble"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/white"
             android:text="Dribble"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_below="@id/dribble"
             />
 
-
         <ImageView
             android:id="@+id/gitHub"
             android:layout_width="23dp"
             android:layout_height="21dp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="150dp"
             android:layout_marginTop="50dp"
             android:src="@drawable/github_2" />
 
@@ -229,19 +223,18 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="GitHub"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="80dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_below="@id/gitHub"
             android:layout_toRightOf="@id/playStore"
             />
 
 
-
         <ImageView
             android:id="@+id/instagram"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="220dp"
+            android:layout_marginLeft="270dp"
             android:layout_marginTop="50dp"
             android:src="@drawable/instagram_new" />
         <TextView
@@ -249,7 +242,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="80dp"
             android:text="Instagram"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_below="@id/gitHub"
@@ -257,17 +250,11 @@
             />
 
 
-
-
-
-
-
-
         <ImageView
             android:id="@+id/bitbucket"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="320dp"
+            android:layout_marginLeft="690dp"
             android:layout_marginTop="50dp"
             android:src="@drawable/bitbucket" />
 
@@ -276,21 +263,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="380dp"
             android:text="BitBucket"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_below="@id/gitHub"
             android:layout_toRightOf="@id/instagram"
             />
 
-
-
-
         <ImageView
             android:id="@+id/googlePlus"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="150dp"
             android:layout_marginTop="150dp"
             android:src="@drawable/googleplus" />
 
@@ -298,15 +282,13 @@
             android:id="@+id/tv_googlePlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="80dp"
             android:textColor="@color/white"
             android:text="Google Plus"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_below="@id/googlePlus"
             android:layout_toRightOf="@id/twitter"
             />
-
-
 
 
         <ImageView
@@ -327,7 +309,6 @@
             android:layout_below="@id/linkedin"
             android:layout_toRightOf="@id/dribble"
             />
-
 
         <ImageView
             android:id="@+id/google"
@@ -409,6 +390,16 @@
             android:layout_below="@id/youtube"
             android:layout_toRightOf="@id/Email"
             />
+
+
+
+
+
+
+
+
+
+
 
 
     </RelativeLayout>
